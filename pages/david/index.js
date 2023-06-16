@@ -1,13 +1,21 @@
-import { Fragment } from 'react';
-import { useRouter } from 'next/router';
+import { Fragment, useEffect, useState } from 'react';
+import http from '../../services/http';
 
 function David() {
-  const router = useRouter();
+
+const [data, setData] = useState([]);
+
+  useEffect(() => {
+    http.get("/api01").then((response) => {
+      setData(response.data.items);
+    });
+  }, []);
 
 
   return (
     <Fragment>
       <h1>Hi</h1>
+      {data && data.map((item, index) => <p key={index}>{item.item}</p>)}
     </Fragment>
   );
 }
