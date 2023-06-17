@@ -16,17 +16,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #94fdfd;
+  color: #6a4a04;
 }
 
 .logo a {
   text-decoration: none;
-  color: #94fdfd;
+  color: #c5b098;
+  font-size: 1.4rem;
 }
 
 .navigation a {
   text-decoration: none;
-  color: #74dacc;
+  color: #a58867;
   font-size: 1rem;
 }
 
@@ -36,6 +37,6 @@
   }
 
   .navigation a {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
