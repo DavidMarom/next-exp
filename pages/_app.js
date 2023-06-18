@@ -4,6 +4,7 @@ import "../styles/globals.css";
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>
+      <title>The Bold Developers</title>
       <div className="content-container">
         <Component {...pageProps} />
       </div>
