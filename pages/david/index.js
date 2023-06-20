@@ -7,15 +7,14 @@ const [data, setData] = useState([]);
 
   useEffect(() => {
     http.get("/api01").then((response) => {
-      setData(response.data.items);
+      setData(response.data);
     });
   }, []);
 
-
   return (
     <Fragment>
-      <h1>Hi</h1>
-      {data && data.map((item, index) => <p key={index}>{item.item}</p>)}
+      <h1>Hi2</h1>
+      {data && data.map((item, index) => <div key={index}><p>{item.name} - {item.price}</p> </div>    )}
     </Fragment>
   );
 }
