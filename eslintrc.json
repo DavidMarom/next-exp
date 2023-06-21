@@ -1,18 +1,23 @@
 {
-    "rules": {
-      "import/no-unresolved": [
-        "error",
-        {
-          "caseSensitive": false
-        }
-      ]
-    },
-    "settings": {
-      "import/resolver": {
-        "node": {
-          "extensions": [".js", ".jsx", ".ts", ".tsx"]
-        }
+  "parser": "babel-eslint",
+  "rules": {
+    "import/no-unresolved": [
+      "error",
+      {
+        "caseSensitive": false
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
       }
     }
   }
-  
+}
