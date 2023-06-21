@@ -1,0 +1,24 @@
+{
+    "rules": {
+        "no-require-imports": false,
+        "import/no-unresolved": [
+            "error",
+            {
+                "caseSensitive": false
+            }
+        ]
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "extensions": [
+                    ".js",
+                    ".jsx",
+                    ".ts",
+                    ".tsx"
+                ]
+            }
+        }
+    },
+    "caseSensitive": false
+}
