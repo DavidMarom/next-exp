@@ -6,9 +6,10 @@ async function handler(req, res) {
     const documents = await getAllDocuments(client, "items");
 
     res.status(200).json(documents);
-  } finally {
-    client.close();
+  } catch (error) {
+    res.status(500).json({ message: "Connecting to the database failed!" });
   }
+  
 }
 
 export default handler;
