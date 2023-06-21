@@ -9,5 +9,13 @@
             },
             "continue": true
         }
-    ]
+    ],
+    "rules": {
+        "import/no-unresolved": [
+            "error",
+            {
+                "caseSensitive": false
+            }
+        ]
+    }
 }
