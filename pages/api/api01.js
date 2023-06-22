@@ -1,4 +1,4 @@
-import { connectDatabase, getAllDocuments,getAllCollectionNames } from "../utils/db";
+import { connectDatabase, getAllDocuments } from "../utils/db";
 
 async function handler(req, res) {
   try {
