@@ -1,11 +1,12 @@
+
 function MyApp({ Component, pageProps }) {
   return (
-    <>
+    <div className="content-container">
       <title>The Bold Developers</title>
       <div className="content-container">
         <Component {...pageProps} />
       </div>
-    </>
+    </ div>
   );
 }
 
