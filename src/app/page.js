@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Home() {
   return (
 
@@ -7,6 +9,10 @@ export default function Home() {
       <br />
       <b><p>Join us:</p></b>
       <a href="https://discord.gg/u8huvHYEvq" target="_blank">Discord</a>
+
+      <br /><br />
+
+      <Link href="/david">Mongo test</Link>
 
 
     </div>

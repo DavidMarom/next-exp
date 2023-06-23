@@ -14,6 +14,7 @@ const [data, setData] = useState([]);
   return (
     <Fragment>
       <h1>Hi2</h1>
+      <p>Calling mongoDB...</p>
       {data && data.map((item, index) => <div key={index}><p>{item.name} - {item.price}</p> </div>    )}
     </Fragment>
   );
