@@ -1,27 +1,31 @@
 "use client";
 import PropTypes from "prop-types"
-import { RowContainer } from "./Row.style"
+import { ColContainer } from "./Col.style"
 
 function Row({
     children,
+    width = "100%",
     height = "300px",
     justifyContent = "space-between",
     background
 }) {
+
     return (
-        <RowContainer
+        <ColContainer
             justifyContent={justifyContent}
             height={height}
             background={background}
+            width={width}
         >
             {children}
-        </RowContainer>
+        </ColContainer>
     )
 }
 
 Row.propTypes = {
+    width: PropTypes.string,
     children: PropTypes.node,
-    height: PropTypes.number,
+    height: PropTypes.string,
     background: PropTypes.string,
     justifyContent: PropTypes.string
 }

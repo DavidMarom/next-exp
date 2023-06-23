@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
-export const RowContainer = styled.div`
+export const ColContainer = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: ${({ justifyContent }) => justifyContent};
   align-items: ${({ center }) => (center ? 'center' : 'flex-start')};
   background-color: ${({ background }) => background};
-  width: 100%;
+  width: ${({ width }) => width};
   height: ${({ height }) => height};
 
 `;

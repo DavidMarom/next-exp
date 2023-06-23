@@ -1,9 +1,10 @@
+"use client";
 import React from 'react';
 import PropTypes from "prop-types"
-import { ButtonContainer } from "./Button2.style"
-import { Arrow } from "../Icons"
+import { ButtonContainer } from "./Button.style"
+import { Arrow } from "../icons/Arrow/Arrow.js"
 
-const Button2 = ({
+const Button = ({
     type,
     marginTop,
     disable,
@@ -36,7 +37,7 @@ const Button2 = ({
     )
 }
 
-Button2.propTypes = {
+Button.propTypes = {
     type: PropTypes.string,
     marginTop: PropTypes.string,
     disable: PropTypes.bool,
@@ -50,4 +51,4 @@ Button2.propTypes = {
     Arrow: PropTypes.bool
 }
 
-export default Button2
+export default Button
