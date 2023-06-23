@@ -1,3 +1,6 @@
+Discord:
+[https://discord.gg/u8huvHYEvq](https://discord.gg/u8huvHYEvq)
+
 GitHub:
 [https://github.com/DavidMarom/next-exp](https://github.com/DavidMarom/next-exp)
 
