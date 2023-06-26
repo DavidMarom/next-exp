@@ -6,6 +6,7 @@ export default function Home() {
   return (
     <Row>
       <SideBar background='#ffaaaa'>
+        <Link href="/">Home</Link>
         <Link href="/david">Mongo test</Link>
       </SideBar>
 

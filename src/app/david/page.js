@@ -1,5 +1,6 @@
 'use client'
-import { Row, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
+import { Row } from '@/components';
 import http from '../../services/http';
 import { PageContainer, SideBar } from '@/components';
 import Link from 'next/link';
@@ -9,15 +10,16 @@ const David = () => {
 
   useEffect(async () => {
     const res = await http.get("/api01");
-    console.log(res.data);
     setData(res.data);
   }, []);
 
   return (
+    
     <Row>
-      {/* <SideBar background='#ffaaaa'>
+      <SideBar background='#ffaaaa'>
+        <Link href="/">Home</Link>
         <Link href="/david">Mongo test</Link>
-      </SideBar> */}
+      </SideBar>
 
       <PageContainer>
         <h1>Hi2</h1>
@@ -25,6 +27,7 @@ const David = () => {
         {data && data.map((item, index) => <div key={index}><p>{item.name} - {item.price}</p> </div>)}
       </PageContainer>
     </Row>
+    
   );
 }
 
