@@ -7,7 +7,7 @@ function PageContainer({
     width = "100%",
     height = "100vh",
     justifyContent = "start",
-    background = "#999999"
+    background = "#EFEFEF"
 }) {
 
     return (

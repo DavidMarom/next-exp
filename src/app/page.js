@@ -5,7 +5,7 @@ import { Row, Col, SideBar, PageContainer } from '../components/index.js'
 export default function Home() {
   return (
     <Row>
-      <SideBar background='#ffaaaa'>
+      <SideBar background='#B7B7B7'>
         <Link href="/">Home</Link>
         <Link href="/david">Mongo test</Link>
       </SideBar>
