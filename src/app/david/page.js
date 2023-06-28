@@ -2,16 +2,19 @@
 import { useEffect, useState } from 'react';
 import { Row } from '@/components';
 import http from '../../services/http';
-
 import { PageContainer, SideBar } from '@/components';
 
 const David = () => {
   const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-  useEffect(async () => {
-    const res = await http.get("/api01");
+  const getData = async () => {
+    const res = await http.get("/api01",);
     setData(res.data);
-  }, []);
+    setLoading(false);
+  }
+
+  if (loading) { getData() }
 
   return (
 

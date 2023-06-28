@@ -17,5 +17,9 @@
     "react-dom": "18.2.0",
     "react-inlinesvg": "^3.0.2",
     "styled-components": "^6.0.0-rc.6"
+  },
+  "devDependencies": {
+    "eslint": "8.43.0",
+    "eslint-config-next": "13.4.7"
   }
 }
