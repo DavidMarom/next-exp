@@ -14,17 +14,17 @@ const Catalog = () => {
   }, []);
 
   return (
-    
+
     <Row>
-      <SideBar background='#ffaaaa' />
-        
+      <SideBars />
+
       <PageContainer>
         <h1>Catalog</h1>
         <p>Calling mongoDB...</p>
         {data && data.map((item, index) => <div key={index}><p>{item.name} - {item.price}</p> </div>)}
       </PageContainer>
     </Row>
-    
+
   );
 }
 

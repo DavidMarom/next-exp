@@ -7,7 +7,7 @@ function SideBar({
     width = "200px",
     height = "100vh",
     justifyContent = "start",
-    background
+    background ="#B7B7B7"
 }) {
 
     return (

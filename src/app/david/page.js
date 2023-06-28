@@ -19,7 +19,7 @@ const David = () => {
   return (
 
     <Row>
-      <SideBar background='#ffaaaa' />
+      <SideBar />
 
       <PageContainer>
         <h1>Hi2</h1>
