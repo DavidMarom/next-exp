@@ -2,7 +2,6 @@
 import { useEffect, useState } from 'react';
 import { Row } from '@/components';
 import http from '../../services/http';
-import cleanup from '../../services/http';
 
 import { PageContainer, SideBar } from '@/components';
 
@@ -12,8 +11,6 @@ const David = () => {
   useEffect(async () => {
     const res = await http.get("/api01");
     setData(res.data);
-
-    return () => cleanup();
   }, []);
 
   return (

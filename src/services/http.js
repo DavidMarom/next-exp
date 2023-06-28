@@ -8,9 +8,4 @@ const http = axios.create({
     }
 });
 
-const cleanup = () => {
-    console.log("cleanup");
-};
-
-
 export default http;
