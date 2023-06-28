@@ -1,9 +1,9 @@
 "use client";
 import PropTypes from "prop-types"
 import { SBContainer } from "./SideBar.style"
+import Link from 'next/link';
 
 function SideBar({
-    children,
     width = "200px",
     height = "100vh",
     justifyContent = "start",
@@ -17,7 +17,8 @@ function SideBar({
             background={background}
             width={width}
         >
-            {children}
+            <Link href="/">Home</Link>
+            <Link href="/david">Mongo test</Link>
         </SBContainer>
     )
 }
