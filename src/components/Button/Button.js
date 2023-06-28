@@ -2,7 +2,7 @@
 import React from 'react';
 import PropTypes from "prop-types"
 import { ButtonContainer } from "./Button.style"
-import { Arrow } from "../icons/Arrow/Arrow.js"
+import { Arrow } from "../index"
 
 const Button = ({
     type,
