@@ -1,0 +1,37 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  width: 100%;
+}
+
+.main .title {
+  padding: 10px;
+  font-size: 25px;
+  color: cornflowerblue;
+}
+
+.main .about {
+  display: flex;
+  margin: 5px;
+  padding: 5px;
+}
+
+.buttons .button {
+  margin-left: 10px;
+}
+
+.buttons .button .innerBtn {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.buttons {
+  display: flex;
+  margin: 20px;
+}
+
+.img {
+  margin: 10px;
+}
