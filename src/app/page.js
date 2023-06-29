@@ -1,6 +1,5 @@
-"use client";
 import Link from 'next/link'
-import { Row, Col, SideBar, PageContainer } from '../components/index.js'
+import { Row, SideBar, PageContainer } from '../components/index.js'
 
 export default function Home() {
   return (
@@ -9,8 +8,6 @@ export default function Home() {
         <Link href="/">Home</Link>
         <Link href="/david">Mongo test</Link>
       </SideBar>
-
-
 
       <PageContainer>
 
