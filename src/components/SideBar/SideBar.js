@@ -24,6 +24,7 @@ function SideBar({
             </Row>
             <Link href="/">Home</Link>
             <Link href="/david">Mongo test</Link>
+            <Link href="/noams">Noams page</Link>
         </SBContainer>
     )
 }
