@@ -1,6 +1,5 @@
-"use client";
 import Link from 'next/link'
-import { Row, Col, SideBar, PageContainer } from '../components/index.js'
+import { Row, SideBar, PageContainer } from '../components/index.js'
 
 export default function Home() {
   return (
@@ -10,10 +9,7 @@ export default function Home() {
         <Link href="/david">Mongo test</Link>
       </SideBar>
 
-
-
       <PageContainer>
-
         <h1>Home Page</h1>
         <p>An experimental Next.js project for bold developers</p>
         <br />

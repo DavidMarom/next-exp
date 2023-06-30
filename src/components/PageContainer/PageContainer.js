@@ -6,13 +6,13 @@ function PageContainer({
     children,
     width = "100%",
     height = "100vh",
-    justifyContent = "start",
+    justifycontent = "start",
     background = "#EFEFEF"
 }) {
 
     return (
         <SBContainer
-            justifyContent={justifyContent}
+        justifycontent={justifycontent}
             height={height}
             background={background}
             width={width}
@@ -27,7 +27,7 @@ PageContainer.propTypes = {
     children: PropTypes.node,
     height: PropTypes.string,
     background: PropTypes.string,
-    justifyContent: PropTypes.string
+    justifycontent: PropTypes.string
 }
 
 export default PageContainer

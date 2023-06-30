@@ -4,15 +4,17 @@ import { RowContainer } from "./Row.style"
 
 function Row({
     children,
-    height = "300px",
-    justifyContent = "space-between",
-    background
+    height,
+    justifycontent = "space-between",
+    background,
+    marginbottom
 }) {
     return (
         <RowContainer
-            justifyContent={justifyContent}
+        justifycontent={justifycontent}
             height={height}
             background={background}
+            marginbottom={marginbottom}
         >
             {children}
         </RowContainer>
@@ -20,10 +22,11 @@ function Row({
 }
 
 Row.propTypes = {
+    marginbottom: PropTypes.string,
     children: PropTypes.node,
     height: PropTypes.number,
     background: PropTypes.string,
-    justifyContent: PropTypes.string
+    justifycontent: PropTypes.string
 }
 
 export default Row
