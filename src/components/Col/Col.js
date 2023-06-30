@@ -6,13 +6,13 @@ function Row({
     children,
     width = "100%",
     height = "300px",
-    justifyContent = "space-between",
+    justifycontent = "space-between",
     background
 }) {
 
     return (
         <ColContainer
-            justifyContent={justifyContent}
+            justifycontent={justifycontent}
             height={height}
             background={background}
             width={width}
@@ -27,7 +27,7 @@ Row.propTypes = {
     children: PropTypes.node,
     height: PropTypes.string,
     background: PropTypes.string,
-    justifyContent: PropTypes.string
+    justifycontent: PropTypes.string
 }
 
 export default Row

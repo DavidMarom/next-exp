@@ -8,18 +8,18 @@ import { Row } from '../index.js'
 function SideBar({
     width = "200px",
     height = "100vh",
-    justifyContent = "start",
+    justifycontent = "start",
     background = "#B7B7B7"
 }) {
 
     return (
         <SBContainer
-            justifyContent={justifyContent}
+            justifycontent={justifycontent}
             height={height}
             background={background}
             width={width}
         >
-            <Row marginBottom="20px" justifyContent="center" marinBottom="40px">
+            <Row justifycontent="space-around" marginbottom="40px">
                 <Image src="/logo.png" alt="Logo" width={50} height={50} />
             </Row>
             <Link href="/">Home</Link>
@@ -33,7 +33,7 @@ SideBar.propTypes = {
     children: PropTypes.node,
     height: PropTypes.string,
     background: PropTypes.string,
-    justifyContent: PropTypes.string
+    justifycontent: PropTypes.string
 }
 
 export default SideBar
