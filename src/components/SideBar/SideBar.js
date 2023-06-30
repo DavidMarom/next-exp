@@ -1,13 +1,15 @@
 "use client";
 import PropTypes from "prop-types"
 import { SBContainer } from "./SideBar.style"
+import Image from 'next/image'
 import Link from 'next/link';
+import { Row } from '../index.js'
 
 function SideBar({
     width = "200px",
     height = "100vh",
     justifyContent = "start",
-    background ="#B7B7B7"
+    background = "#B7B7B7"
 }) {
 
     return (
@@ -17,6 +19,9 @@ function SideBar({
             background={background}
             width={width}
         >
+            <Row marginBottom="20px" justifyContent="center" marinBottom="40px">
+                <Image src="/logo.png" alt="Logo" width={50} height={50} />
+            </Row>
             <Link href="/">Home</Link>
             <Link href="/david">Mongo test</Link>
         </SBContainer>

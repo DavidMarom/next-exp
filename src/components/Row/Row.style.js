@@ -8,5 +8,5 @@ export const RowContainer = styled.div`
   background-color: ${({ background }) => background};
   width: 100%;
   height: ${({ height }) => height};
-
+  margin-bottom: ${({ marginBottom }) => marginBottom};
 `;
