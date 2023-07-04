@@ -4,10 +4,7 @@ import { Row, SideBar, PageContainer } from '../components/index.js'
 export default function Home() {
   return (
     <Row>
-      <SideBar>
-        <Link href="/">Home</Link>
-        <Link href="/david">Mongo test</Link>
-      </SideBar>
+      <SideBar />
 
       <PageContainer>
         <h1>Home Page</h1>
