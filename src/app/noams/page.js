@@ -3,7 +3,6 @@ import { Row, SideBar, PageContainer } from '@/components'
 export default function Home() {
   return (
     <Row>
-      <SideBar />
       <PageContainer>
 
         <h1>Noams Page</h1>

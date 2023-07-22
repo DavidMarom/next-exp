@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+
+  min-width: 200px;
+  height: 100vh;
+  background-color: #67225b;
+  padding: 20px;
+}
+
+.sidebarbtn {
+ 
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #88387b;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  transition: all 0.2s ease;
+
+}
+
+.sidebarbtn:hover {
+  background-color: #d85dca;
+}

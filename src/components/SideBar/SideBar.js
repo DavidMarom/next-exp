@@ -1,41 +1,16 @@
 "use client";
-import PropTypes from "prop-types";
-import { SBContainer } from "./SideBar.style";
 import Link from "next/link";
-import Image from "next/image";
-import {Row} from "../index";
+import styles from './sidebar.module.css'
 
-function SideBar({
-    width = "200px",
-    height = "100vh",
-    justifyContent = "start",
-    background = "#B7B7B7",
-}) {
+function SideBar() {
     return (
-        <SBContainer
-            justifyContent={justifyContent}
-            height={height}
-            background={background}
-            width={width}
-        >
-            <Row justifycontent="space-around" marginbottom="40px">
-                <Image src="/logo.png" alt="Logo" width={50} height={50} />
-            </Row>
-
-            <Link href="/">Home</Link>
-            <Link href="/david">Mongo test</Link>
-            <Link href="/noams">Noams page</Link>
-            <Link href="/yarin">Yarin Levi</Link>
-        </SBContainer>
-    );
+        <div className={styles.container}>
+            <Link href="/"><div className={styles.sidebarbtn}>Home</div></Link>
+            <Link href="/david"><div className={styles.sidebarbtn}>David</div></Link>
+            <Link href="/noams"><div className={styles.sidebarbtn}>Noam</div></Link>
+            <Link href="/yarin"><div className={styles.sidebarbtn}>Yarin</div></Link>
+        </div>
+    )
 }
 
-SideBar.propTypes = {
-    width: PropTypes.string,
-    children: PropTypes.node,
-    height: PropTypes.string,
-    background: PropTypes.string,
-    justifyContent: PropTypes.string,
-};
-
-export default SideBar;
+export default SideBar

@@ -3,11 +3,7 @@ import { Row, SideBar, PageContainer } from '../components/index.js'
 
 export default function Home() {
   return (
-    <Row>
-      <SideBar>
-        <Link href="/">Home</Link>
-        <Link href="/david">Mongo test</Link>
-      </SideBar>
+      
 
       <PageContainer>
         <h1>Home Page</h1>
@@ -17,6 +13,5 @@ export default function Home() {
         <a href="https://discord.gg/u8huvHYEvq" target="_blank">Discord</a>
         <br /><br />
       </PageContainer>
-    </Row>
   )
 }

@@ -105,3 +105,9 @@ a {
     color-scheme: dark;
   }
 }
+
+.layout-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}

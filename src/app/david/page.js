@@ -23,7 +23,6 @@ const David = () => {
   return (
 
     <Row>
-      <SideBar />
 
       <PageContainer>
         <h1>Calling mongoDB</h1>

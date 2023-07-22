@@ -69,7 +69,6 @@ const Yarin = () => {
   ];
   return (
     <Row>
-      <SideBar />
       <PageContainer>
         <div className={classes.main}>
           <h1 className={classes.title}>{title.toUpperCase()}</h1>
